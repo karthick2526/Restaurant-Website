@@ -19,12 +19,99 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      widows: 100%;
+      width: 100%;
       height: 100vh;
       overflow: hidden;
       padding-top: 250px;
     }
+   
+    .booktable {
+      background-color: #f0ebe0;
+    }
     
+
+    .booking-box {
+      
+      height: auto;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .booking-box h2 {
+      font-weight: 600;
+      margin: 30px;
+    }
+
+    .form-control, .form-select {
+      background: transparent;
+      color: black;
+      border: 1px solid black;
+    }
+
+    .form-control::placeholder {
+      color: black;
+    }
+
+    .btn-custom {
+      background: linear-gradient(to right, #ff0000, #990000);
+      border: none;
+      padding: 10px 30px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    
+    .footer {
+  background: linear-gradient(to right, #1c1c1c, #2a2a2a);
+}
+
+
+.footer-title {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.footer-title::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+/* Links */
+.footer ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.footer ul li:hover {
+  color: white;
+}
+
+/* Contact text */
+.footer p {
+  color: #ccc;
+}
+
+/* Social icons */
+.social-icons i {
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: red;
+}
+
+hr {
+  border-color: white;
+}
     
 
 
@@ -51,130 +138,134 @@
         <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
         <li class="nav-item"> 
           <a class="nav-link" href="#Menu">
-          <select class="form-select form-select-sm" aria-label="Small select example">
-            <option selected>Menu</option>
-            <option value="1">Appetizers</option>
-            <option value="2">Main Course</option>
-            <option value="3">Desserts</option>
-            <option value="4">Drinks</option>
-          </select>
-        </a>
-      </li>
-          <li class="nav-item"><a class="nav-link" href="#About"> About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Contact"> Contact</a></li>
-        </div>
-
+            <select class="form-select form-select-sm text-white bg-dark" aria-label="Small select example">
+              <option selected>Menu</option>
+              <option value="1">Appetizers</option>
+              <option value="2">Main Course</option>
+              <option value="3">Desserts</option>
+              <option value="4">Drinks</option>
+            </select>
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#About"> About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact"> Contact</a></li>
       </div>
-    </nav>
 
-    <!-- content section-->
+    </div>
+  </nav>
 
-    <section class="hero text-center ">
-      <div class="container">
-        <h1 class="display-5 fw-bold text-dark mb-4">Welcome to the Hungry Hub</h1>
-        <p class="lead fw-bold text-success ">Fresh ingredients, authentic taste, unforgettable dining experience.</p>
-        <button type="button" class="btn btn-danger btn-lg  mt-4 rounded">View Menu</button>
+  <!-- content section-->
 
+  <section class="hero text-center ">
+    <div class="container">
+      <h1 class="display-5 fw-bold text-dark mb-4">Welcome to the Hungry Hub</h1>
+      <p class="lead fw-bold text-success ">Fresh ingredients, authentic taste, unforgettable dining experience.</p>
+      <button type="button" class="btn btn-danger btn-lg  mt-4 rounded mx-4">View Menu</button>
+      <button type="button" class="btn btn-warning btn-lg  mt-4 rounded">Reserve a Table</button>
+
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+
+  <section  class="py-5" style="background:#f0ebe0;">
+    <div class="container"  id="#Menu">
+      <div class="our-menu text-center mb-2">
+        <h2 class="mb-5 fs-1 fw-bold" >Our Menu</h2>
       </div>
-    </section>
-
-    <!-- Menu Section -->
-
-    <section  class="py-5" style="background:#f0ebe0;">
-      <div class="container"  id="#Menu">
-        <div class="our-menu text-center mb-2">
-          <h2 class="mb-5 fs-1 fw-bold" >Our Menu</h2>
-        </div>
-        <div class="btn-group-lg text-center mb-5 ">
-         <a href="#Starters " type="button" class="btn btn-outline-danger ms-3">Starters</a> 
-         <a href="#Main Course " type="button" class="btn btn-outline-danger ms-3">Main Course</a> 
-         <a href="#Desserts " type="button" class="btn btn-outline-danger ms-3">Desserts</a>
-         <a href="#Drinks" type="button" class="btn btn-outline-danger ms-3">Drinks</a>
-       </div>
-     </section>
+      <div class="btn-group-lg text-center mb-5 ">
+       <a href="#Starters " type="button" class="btn btn-outline-danger ms-3">Starters</a> 
+       <a href="#Main Course " type="button" class="btn btn-outline-danger ms-3">Main Course</a> 
+       <a href="#Desserts " type="button" class="btn btn-outline-danger ms-3">Desserts</a>
+       <a href="#Drinks" type="button" class="btn btn-outline-danger ms-3">Drinks</a>
+     </div>
+   </section>
 
 
 
-     <section  class="py-5">
-     
-        <div class="container"  id="Starters">
-          <div class="text-center">
-            <h2>Starters</h2>
-            <p class="text-secondary text-uppercase mb-5">Perfect bites to begin your meal</p>
-          </div>
+   <section  class="py-5">
 
-          <div class="row">
-           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
-              <img class="rounded" src="Starters/cb.jpg">
-              <div class="card-body">
-                <h5 class="card-title ">Cheese Balls</h5>
+    <div class="container"  id="Starters">
+      <div class="text-center">
+        <h2>Starters</h2>
+        <p class="text-secondary text-uppercase mb-5">Perfect bites to begin your meal</p>
+      </div>
 
-
-                <div class="card-btn d-flex justify-content-between align-items-center mt-4">
-                  <span class="price ">₹190</span>
-                  <button class="btn btn-success me-3">Add to Cart</button>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+      <div class="row">
+       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
+          <img class="rounded" src="Starters/cb.jpg">
+          <div class="card-body">
+            <h5 class="card-title ">Cheese Balls</h5>
 
 
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
-              <img class="rounded" src="Starters/ct.jpg">
-              <div class="card-body">
-                <h5 class="card-title ">Chicken Tikka</h5>
-                <div class="card-btn d-flex justify-content-between align-items-center mt-4">
-                 <span class="price ">₹220</span>
-                 <button class="btn btn-success me-3">Add to Cart</button>
-               </div>
-             </div>
-           </div>
-         </div>
-
-
-         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-          <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
-            <img class="rounded" src="Starters/ff.jpg">
-            <div class="card-body">
-              <h5 class="card-title ">French Fries</h5>
-
-              <div class="card-btn d-flex justify-content-between align-items-center mt-4">
-                <span class="price ">₹90</span>
-
-                <button class="btn btn-success me-3">Add to Cart</button>
-              </div>
+            <div class="card-btn d-flex justify-content-between align-items-center mt-4">
+              <span class="price ">₹190</span>
+              <button class="btn btn-success me-3">Add to Cart</button>
             </div>
           </div>
         </div>
 
-
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-          <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
-            <img class="rounded" src="Starters/ffin.jpg">
-            <div class="card-body">
-              <h5 class="card-title ">Fish Fingers</h5>
+      </div>
 
 
-              <div class="card-btn d-flex justify-content-between align-items-center mt-4">
-               <span class="price ">₹160</span>
-               <button class="btn btn-success me-3">Add to Cart</button>
-             </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
+          <img class="rounded" src="Starters/ct.jpg">
+          <div class="card-body">
+            <h5 class="card-title ">Chicken Tikka</h5>
+            <div class="card-btn d-flex justify-content-between align-items-center mt-4">
+             <span class="price ">₹220</span>
+             <button class="btn btn-success me-3">Add to Cart</button>
            </div>
          </div>
        </div>
+     </div>
 
+
+     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
+        <img class="rounded" src="Starters/ff.jpg">
+        <div class="card-body">
+          <h5 class="card-title ">French Fries</h5>
+
+          <div class="card-btn d-flex justify-content-between align-items-center mt-4">
+            <span class="price ">₹90</span>
+
+            <button class="btn btn-success me-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card bg-light shadow shadow-md w-100 h-100 rounded">
+        <img class="rounded" src="Starters/ffin.jpg">
+        <div class="card-body">
+          <h5 class="card-title ">Fish Fingers</h5>
+
+
+          <div class="card-btn d-flex justify-content-between align-items-center mt-4">
+           <span class="price ">₹160</span>
+           <button class="btn btn-success me-3">Add to Cart</button>
+         </div>
+       </div>
      </div>
    </div>
- 
+     <div class="text-center">
+   <button class="btn btn-warning my-3">Explore Full Menu <i class="fa-solid fa-caret-right"></i></button>
+   </div>
+
+ </div>
+</div>
+
 </section>
 
 <!--  Main Course  -->
 
 
-<section  class="py-5" style="background:#f0ebe0;">
+<section  class="py-5" style="background:#f0ebe0; ">
   <div class="container" id="Main Course">
     <div class="text-center mb-4">
      <h2>Main Course</h2>
@@ -305,6 +396,10 @@
   </div>
 </div>
 
+ <div class="text-center">
+   <button class="btn btn-warning my-3">Explore Full Menu <i class="fa-solid fa-caret-right"></i></button>
+   </div>
+
 </div>
 </div>
 </section>
@@ -374,22 +469,91 @@
         </div>
       </div>
 
+       <div class="text-center">
+   <button class="btn btn-warning my-3">Explore Full Menu <i class="fa-solid fa-caret-right"></i></button>
+   </div>
+
     </div>
   </div>
 </section>
 
+<div class="booktable  py-5">
+  <div class="booking-box">
+    <h2>Book Your Table</h2>
+    <form>
+      <div class="row g-3 p-3">
+        <div class="col-md-6">
+           
+          <input type="text" class="form-control" placeholder="Name">
+        </div>
+
+          <div class="col-md-6">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>People</option>
+            <option>1 Person</option>
+            <option>2 Person</option>
+            <option>3 People</option>
+            <option>4 People</option>
+          </select>
+        </div>
+   
+
+        <div class="col-md-6">
+          <input type="date" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+          <select class="form-select">
+            <option selected>Time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+            
+          </select>
+        </div>
+        
+    
+
+        <div class="col-md-6">
+
+          <input type="text" class="form-control" placeholder="Phone Number">
+        </div>
+           </div>
+
+      
+
+
+
+      <button type="submit" class="btn btn-custom mt-4">Reserve Now</button>
+    </form>
+
+  </div>
+</div>
+
 
 
 <!-- Info -->
-
-<section class="py-5">
+ 
+<section  class="py-5">
+    <div class="container"  id="#Contact">
+      <div class="text-center mb-2">
+        <h2 class="mb-5 fs-1 fw-bold" >Contact</h2>
+      </div>
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-md-4">
         <div class="card info-card p-4 h-100">
           <div><i class="fa-solid fa-location-dot"></i></div>
           <h4 class="mt-2">Location</h4>
-          <p class="text-muted">No. 12, Anna Salai<br>Chennai – 600 002<br>Tamil Nadu, India</p>
+          <p class="text-muted">No. 12, Poonguil Nagar<br>Karur – 639 006<br>Tamil Nadu, India</p>
         </div>
       </div>
       <div class="col-md-4">
@@ -408,22 +572,70 @@
       </div>
     </div>
   </div>
+</div>
 </section>
 
+<footer class="footer text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
 
+      <!-- Quick Links -->
+      <div class="col-md-3 col-sm-4 mb-4">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li>Home</li>
+          <li>Menu</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
 
+      <!-- Support -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="footer-title">Support</h5>
+        <ul class="list-unstyled">
+          <li>FAQs</li>
+          <li>Booking Guide</li>
+          <li>Customer Support</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
 
+      <!-- Contact -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="footer-title">Contact Us</h5>
+        <p><i class="fa fa-envelope me-2"></i> order@hungryhub.com</p>
+        <p><i class="fa fa-phone me-2"></i> (123) 456-7890</p>
+      </div>
 
+      <!-- Social -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="footer-title">Follow Us</h5>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
 
+    </div>
+  </div>
 
+    <hr>
 
-
-
-
-
-<footer class="bg-secondary text-black text-center py-3">
+    <div class=" text-black text-center py-2">
   <p class="mb-0">© 2026 <i class="fa-brands fa-houzz"></i>ungry <i class="fa-brands fa-houzz"></i>ub. All rights reserved.</p>
+</div>
+
+  
 </footer>
+
+
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
